@@ -1,0 +1,227 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #222;
+}
+
+a:hover {
+    color: #0000ff;
+}
+
+
+.top {
+    display: flex;
+}
+
+.top > div:first-child {
+    margin-right: 24px;
+}
+
+.avi {
+    width: 190px;
+    height: 190px;
+}
+
+.avi img {
+    width: 100%;
+    height: 100%;
+}
+
+.top > div:nth-child(2) {
+    margin-left: 24px;
+    max-width: 600px;
+}
+
+.contact-info {
+    font-size: .9em;
+}
+
+.contact-info article {
+    display: inline-block;
+}
+
+.contact-info article p {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.top .contact-info article:not(:first-child) {
+    margin-left: 36px;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-description {
+    background: #111;
+    color: #fff;
+    padding: 18px;
+}
+
+.project-description a {
+    color: #ddd;
+}
+
+.project-description h5 {
+    margin-top: .5em;
+}
+
+.big-image {
+    width: 100%;
+}
+
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-image {
+    width: 100%;
+}
+
+.project-container {
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column
+}
+
+.project-links {
+    margin-top: 2em;
+    text-align: right;
+}
+
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personal-info {
+    width: 340px;
+}
+
+.personal-info:nth-child(2) {
+    margin-left: 48px;
+}
+
+.mixed-content {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+
+/*
+ * ---------------------------------------------------------------- 
+ *  STYLES AT RESPONSIVE BREAKPOINTS
+ * ---------------------------------------------------------------- 
+*/
+
+
+/* Small devices (portrait tablets and large phones, 320px and up) */
+@media only screen and (min-width: 320px) {
+    .project-container {
+        width: 100%;
+    }
+} 
+
+
+/* Small devices (portrait tablets and large phones, 599.97 and down) */
+@media only screen and (max-width: 599.97px) {
+    .intro {
+        padding-top: 48px;
+    }
+
+    .top {
+        flex-direction: column;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .bio-container, 
+    .footer-container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .top > div:first-child {
+        margin: 0 auto 24px auto;
+    }
+
+    .avi {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .top > div:nth-child(2) {
+        margin-left: 0;
+    }
+    
+    .top .contact-info article {
+        display: block;
+    }
+    
+    .top .contact-info article:not(:first-child) {
+        margin-left: 0;
+    }
+
+    .mixed-content {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }    
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* main {
+        background: blue;
+    } */
+    .project-container {
+        width: 300px;
+    }    
+} 
+
+/* Medium devices (landscape tablets, 767.97px and down) */
+@media only screen and (max-width: 767.97px) {
+    .personal-info:nth-child(2) {
+        margin-left: 0
+    }
+    .bio {
+        flex-direction: column;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* main {
+        background: yellow;
+    } */
+} 
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* main {
+        background: green;
+    } */
+} 
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* main {
+        background: black;
+    } */
+}
