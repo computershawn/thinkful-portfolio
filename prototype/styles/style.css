@@ -1,22 +1,53 @@
 * {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
+}
+
+body {
+    color: var(--dark-darkgray);
+}
+
+h1, h2, h3 {
+    font-family: 'Source Serif Pro', 'Times New Roman', Times, serif;
+}
+
+h5 {
+    color: var(--red-orange);
 }
 
 a {
     text-decoration: none;
 }
 
-a:link,
-a:visited,
-a:active {
-    color: #222;
+p {
+    line-height: 1.4em;
+}
+
+a:link, a:visited, a:active {
+    color: var(--dark-darkgray);
 }
 
 a:hover {
-    color: #0000ff;
+    color: var(--darkblue);
 }
 
+.intro {
+    border-top: 6px solid var(--lightblue);
+}
+
+.accented-bg {
+    background-color: var(--light-lightblue);
+}
+
+.project-description a:link,
+.project-description a:visited,
+.project-description a:active {
+    color: #ddd;
+}
+
+.project-description a:hover {
+    color: #fff;
+}
 
 .top {
     display: flex;
@@ -58,6 +89,10 @@ a:hover {
     margin-left: 36px;
 }
 
+.with-top-divider {
+    border-top: 1px solid var(--darkblue-transp);
+}
+
 .projects-grid {
     display: flex;
     justify-content: space-between;
@@ -65,17 +100,14 @@ a:hover {
 }
 
 .project-description {
-    background: #111;
-    color: #fff;
+    background-color: var(--dark-darkgray);
+    color: white;
     padding: 18px;
-}
-
-.project-description a {
-    color: #ddd;
 }
 
 .project-description h5 {
     margin-top: .5em;
+    color: var(--light-lightblue);
 }
 
 .big-image {
@@ -100,7 +132,6 @@ a:hover {
 
 .project-links {
     margin-top: 2em;
-    text-align: right;
 }
 
 .bio {
@@ -121,6 +152,10 @@ a:hover {
     padding-bottom: 96px;
 }
 
+.mixed-content.page-footer {
+    background-color: var(--lightblue)
+}
+
 
 /*
  * ---------------------------------------------------------------- 
@@ -128,72 +163,72 @@ a:hover {
  * ---------------------------------------------------------------- 
 */
 
-
 /* Small devices (portrait tablets and large phones, 320px and up) */
+
 @media only screen and (min-width: 320px) {
     .project-container {
         width: 100%;
     }
-} 
-
+}
 
 /* Small devices (portrait tablets and large phones, 599.97 and down) */
+
 @media only screen and (max-width: 599.97px) {
     .intro {
         padding-top: 48px;
     }
-
     .top {
         flex-direction: column;
         padding-left: 12px;
         padding-right: 12px;
     }
-
-    .bio-container, 
-    .footer-container {
+    .bio-container, .footer-container {
         padding-left: 12px;
         padding-right: 12px;
     }
-
-    .top > div:first-child {
+    h2.projects-section-title {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    .top>div:first-child {
         margin: 0 auto 24px auto;
     }
-
     .avi {
         width: 220px;
         height: 220px;
     }
-    
-    .top > div:nth-child(2) {
+    .top>div:nth-child(2) {
         margin-left: 0;
     }
-    
     .top .contact-info article {
         display: block;
     }
-    
     .top .contact-info article:not(:first-child) {
         margin-left: 0;
     }
-
     .mixed-content {
         padding-top: 60px;
         padding-bottom: 60px;
-    }    
+    }
+    .contact-info article p {
+        margin-top: .2em;
+        margin-bottom: .2em;
+    }
 }
 
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
+
 @media only screen and (min-width: 600px) {
     /* main {
         background: blue;
     } */
     .project-container {
         width: 300px;
-    }    
-} 
+    }
+}
 
 /* Medium devices (landscape tablets, 767.97px and down) */
+
 @media only screen and (max-width: 767.97px) {
     .personal-info:nth-child(2) {
         margin-left: 0
@@ -201,25 +236,26 @@ a:hover {
     .bio {
         flex-direction: column;
     }
-} 
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width: 768px) {
     /* main {
         background: yellow;
     } */
-} 
-
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (min-width: 992px) {
     /* main {
         background: green;
     } */
-} 
-
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+
 @media only screen and (min-width: 1200px) {
     /* main {
         background: black;
