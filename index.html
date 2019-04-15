@@ -5,33 +5,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>prototype</title>
-    <style>
-        * {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            box-sizing: border-box;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        a:link,
-        a:visited,
-        a:active {
-            color: #222;
-        }
-
-        a:hover {
-            color: #0000ff;
-        }
-    </style>
+    <title>shawn jackson</title>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/colors.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Source+Serif+Pro" rel="stylesheet">
 </head>
 
 <body>
     <main>
-        <p>Click <strong><a href="./prototype/index.html">here</a></strong> to see my Thinkful portfolio prototype</a>.</p>
+        <section role="region" class="mixed-content intro">
+            <div class="container top">
+                <div class="avi">
+                    <img src="images/shawnj-avi.jpg" alt="shawn jackson">
+                </div>
+                <div>
+                    <h1>hi.</h1>
+                    <!-- <h1>&#9720;&#9721;&#9722;&#9727;</h1> -->
+                    <div>
+                        <p class="lead-text">
+                            I'm Shawn. I use visual design and code to craft experiences that are as delightful
+                            to use as they are functional.
+                        </p>
+                        <p class="second-text">
+                            In March 2019 I enrolled in <a href="" target="_blank">Thinkful's Engineering Nights
+                                &Weekends program</a>, in my quest to become a full-time web developer. This little
+                            website is a showcase of the stuff I've learned.
+                        </p>
+                    </div>
+                    <div class="contact-info">
+                        <article>
+                            <p><a href="mailto:hello@shawnj.es" aria-label="send me an email"><i class="fa fa-envelope"></i> <span
+                                        class="full-contact-text">
+                                        shontek@gmail.com</span></a></p>
+                        </article>
+                        <article>
+                            <p><a href="https://github.com/computershawn" target="_blank" aria-label="link to my GitHub page"><i class="fab fa-github"></i>
+                                    <span class="full-contact-text">
+                                        /computershawn</span></a></p>
+                        </article>
+                        <article>
+                            <p><a href="https://www.linkedin.com/in/shawnjdesign/" target="_blank" aria-label="link to my LinkedIn profile"><i
+                                        class="fab fa-linkedin"></i> <span class="full-contact-text">
+                                        /shawnjdesign</span></a></p>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section role="region" class="mixed-content with-top-divider">
+            <div class="container bio-container">
+                <h2>This Is Me</h2>
+                <div class="bio">
+                    <div class="personal-info">
+                        <h4>how did i get here?</h4>
+                        <p>
+                            I began my career as a mechanical engineer, working for ten years designing cables in CAD.
+                            During that time, I enrolled in night classes at UCLA Extension and discovered a passion for
+                            visual design. Naturally, after working in design for a few years, I realized that
+                            technology
+                            is my strength. I'm hoping this experience at Thinkful will help me bridge the gap between
+                            my
+                            tech skills and my desire to create.
+                        </p>
+                    </div>
+                    <div class="personal-info">
+                        <h4>i <i class="fa fa-heart"></i> to code</h4>
+                        <p>
+                            My first foray into progrmming was with Flash and ActionScript in the early 2000s. I found
+                            out about Processing, a Java-based programming environment for creative people, around 2007.
+                            Since then I've picked up more 'standard' web dev skills (HTML/CSS/JS) and various
+                            JavaScript
+                            libraries and frameworks. I also tinker with projects using Arduino and Raspberry Pi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section role="region">
+            <img src="images/blue-shapes.jpg" alt="blue shapes" class="big-image">
+        </section>
+
+        <section role="region" class="mixed-content accented-bg">
+            <div class="container">
+                <h2 class="projects-section-title">I Have Made Things</h2>
+                <!--/ START PROJECTS GRID -->
+                <div id="projects-grid"></div>
+                <!-- END PROJECTS GRID /-->
+            </div>
+        </section>
+
+        <section role="region" class="mixed-content page-footer">
+            <div class="container footer-container">
+                <div class="contact-info">
+                    <article>
+                        <a href="mailto:hello@shawnj.es" aria-label="send me an email"><i class="fa fa-envelope"></i></a> |
+                    </article>
+                    <article>
+                        <a href="https://github.com/computershawn" target="_blank" aria-label="link to my GitHub page"><i class="fab fa-github"></i></a> |
+                    </article>
+                    <article>
+                        <a href="https://www.linkedin.com/in/shawnjdesign/" target="_blank" aria-label="link to my LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                    </article>
+                    <span class="goodbye">GOODBYE</span>
+                </div>
+            </div>
+        </section>
+
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
