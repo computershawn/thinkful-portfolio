@@ -28,7 +28,7 @@ a:hover {
 }
 
 .intro {
-    border-top: 6px solid var(--lightblue);
+    border-top: 2px solid var(--lightblue);
 }
 
 .intro h1 {
@@ -120,6 +120,10 @@ a:hover {
     background-color: var(--dark-darkgray);
     color: white;
     padding: 18px;
+}
+
+.project-description p {
+    min-height: 96px;
 }
 
 .project-description h5 {

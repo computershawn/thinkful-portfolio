@@ -1,5 +1,23 @@
 const store = [
     {
+        title: "Community Toolbox",
+        description: "...",
+        imageURL: "images/led-project.jpg",
+        imageAlt: "...",
+        githubLink: "https://github.com/computershawn/led-slat-display",
+        codepenLink: "",
+        liveDemo: "",
+    },    
+    {
+        title: "Graze",
+        description: "...",
+        imageURL: "images/led-project.jpg",
+        imageAlt: "...",
+        githubLink: "https://github.com/computershawn/led-slat-display",
+        codepenLink: "",
+        liveDemo: "",
+    },
+    {
         title: "Pattern Builder",
         description: "A small P5.js web app that lets users create geometric patterns and export them as SVG.",
         imageURL: "images/pattern-builder-project.jpg",
