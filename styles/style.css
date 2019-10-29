@@ -11,8 +11,8 @@ h1, h2, h3 {
     font-family: 'Source Serif Pro', 'Times New Roman', Times, serif;
 }
 
-h4 {
-    color: var(--red-orange);
+.personal-info h4 {
+    color: var(--blue-blue);
 }
 
 p {
@@ -28,7 +28,7 @@ a:hover {
 }
 
 .intro {
-    border-top: 2px solid var(--lightblue);
+    border-top: 1px solid var(--lightblue);
 }
 
 .intro h1 {
@@ -107,7 +107,8 @@ a:hover {
 }
 
 .with-top-divider {
-    border-top: 1px solid var(--darkblue-transp);
+    /*border-top: 1px solid var(--darkblue-transp);*/
+    background-color: #fbfbfb
 }
 
 #projects-grid {
@@ -123,21 +124,27 @@ a:hover {
 }
 
 .project-description p {
-    min-height: 96px;
+    min-height: 80px;
 }
 
-.project-description h5 {
+/* .project-description h5 {
     margin-top: .5em;
     color: var(--light-lightblue);
+} */
+
+.project-description h4 {
+    margin-top: .25em;
+    padding-bottom: .75em;
+    border-bottom: 1px dotted #fff;
 }
 
 .big-image {
     width: 100%;
-    box-shadow: 0 2px 18px 2px rgba(0,0,0,.2);    
+    box-shadow: 0 1px 6px 4px rgba(0,0,0,.2);    
 }
 
 .container {
-    max-width: 1008px;
+    max-width: 1140px;
     padding: 0 24px;
     margin-left: auto;
     margin-right: auto;
@@ -151,6 +158,10 @@ a:hover {
     margin-bottom: 36px;
     display: flex;
     flex-direction: column
+}
+
+.image-link {
+    line-height: .75em;
 }
 
 .project-links {
@@ -265,11 +276,12 @@ a:hover {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .project-container {
-        width: 300px;
+        width: 312px;
+        width: 360px;
     }
 
     .intro {
-        height: 100vh;
+        height: 80vh;
         display: flex;
     }
 
