@@ -12,32 +12,33 @@ function createProjectCard(item) {
     let imageURL = item.imageURL;
     let imageAlt = item.imageAlt;
     let githubLink = item.githubLink;
-    let codepenLink = item.codepenLink;
     let liveDemo = item.liveDemo;
+    let techStack = item.techStack;
 
     let projectLinks = "";
     if(githubLink) {
         projectLinks += `<a href=${githubLink} target="_blank" aria-label="link to this project on GitHub"><i class="fab fa-github"></i></a>`;
     }
-    if(codepenLink) {
-        projectLinks += `<a href=${codepenLink} target="_blank" aria-label="link to this project on CodePen"><i class="fab fa-codepen"></i></a>`;
-    }
     if(liveDemo) {
         projectLinks += `<a href=${liveDemo} target="_blank" aria-label="link to the live demo of this project"><i class="fa fa-eye"></i></a>`;
-    }    
+    }
 
+    let imageProjectLink = liveDemo ? liveDemo : githubLink;
     
-
-
     return `
     <div class="project-container">
-        <img src=${imageURL} alt=${imageAlt} class="project-image">
+        <a class="image-link" href=${imageProjectLink} target="_blank" aria-label="link to this project">
+            <img src=${imageURL} alt='${imageAlt}' class="project-image">
+        </a>
         <div class="project-description">
-            <h5>
+            <h4>
                 ${title}
-            </h5>
-            <p>
+            </h4>
+            <p class="desc">
                 ${description}
+            </p>
+            <p class="tech-stack">
+                <i class="fa fa-wave-square"></i> ${techStack}
             </p>
             <div class="project-links">
                 ${projectLinks}
