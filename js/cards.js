@@ -13,6 +13,7 @@ function createProjectCard(item) {
     let imageAlt = item.imageAlt;
     let githubLink = item.githubLink;
     let liveDemo = item.liveDemo;
+    let techStack = item.techStack;
 
     let projectLinks = "";
     if(githubLink) {
@@ -33,8 +34,11 @@ function createProjectCard(item) {
             <h4>
                 ${title}
             </h4>
-            <p>
+            <p class="desc">
                 ${description}
+            </p>
+            <p class="tech-stack">
+                <i class="fa fa-wave-square"></i> ${techStack}
             </p>
             <div class="project-links">
                 ${projectLinks}

@@ -8,7 +8,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Source Serif Pro', 'Times New Roman', Times, serif;
+    font-weight: 600;
 }
 
 .personal-info h4 {
@@ -123,8 +123,16 @@ a:hover {
     padding: 18px;
 }
 
-.project-description p {
+.project-description .desc {
     min-height: 80px;
+    margin-bottom: 0.5em;
+}
+
+.project-description .tech-stack {
+    font-size: 0.9em;
+    color: rgba(255,255,255,.84);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 /* .project-description h5 {
@@ -155,7 +163,7 @@ a:hover {
 }
 
 .project-container {
-    margin-bottom: 36px;
+    margin-bottom: 1em;
     display: flex;
     flex-direction: column
 }
@@ -165,10 +173,10 @@ a:hover {
 }
 
 .project-links {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
-.project-links a:not(first-child) {
+.project-links a:not(:first-child) {
     margin-left: 0.4em;
 }
 
@@ -190,13 +198,14 @@ a:hover {
 }
 
 .mixed-content {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .mixed-content.page-footer {
     color: white;
-    background-color: var(--darkblue)
+    /* background-color: var(--darkblue); */
+    background-color: var(--blue-blue);
 }
 
 .page-footer a:link{
@@ -261,12 +270,7 @@ a:hover {
     .top .contact-info article:not(:first-child) {
         margin-left: 0;
     }
-    
-    .mixed-content {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    
+        
     .contact-info article p {
         margin-top: .2em;
         margin-bottom: .2em;
